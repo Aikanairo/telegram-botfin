@@ -1,0 +1,10 @@
+venv/
+old-version/
+scrapers/grafica/
+scrapers/dump/
+scrapers/config.py
+scrapers/config-yaz.py
+singoli/
+telegram_media_client.session
+extract_media.session
+config.py
