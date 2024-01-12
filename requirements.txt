@@ -1,0 +1,6 @@
+telebot
+pymongo
+pandas
+fuzzywuzzy
+speedtest
+python-Levenshtein
