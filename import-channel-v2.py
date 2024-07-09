@@ -8,13 +8,14 @@ from telethon.tl.types import DocumentAttributeFilename
 from telethon.tl.functions.channels import GetFullChannelRequest
 import urllib.parse
 import re
+from tqdm import tqdm  # Importa il modulo tqdm
 
 # Credenziali MongoDB
 MONGODB_HOST = "plex-aik.ddns.net"
 MONGODB_PORT = 27017
 MONGODB_USERNAME = "Aik"
 MONGODB_PASSWORD = "16889@Al@mon"
-MONGODB_DATABASE = "telegram-stream"
+MONGODB_DATABASE = "telegram-drive"
 
 # Codifica pass utente
 MONGODB_USERNAME_ENCODED = urllib.parse.quote_plus(MONGODB_USERNAME)
@@ -36,7 +37,6 @@ BOT_TOKEN = "6401590878:AAE_6f-pOH4QqnPNlBSAYeALCX1EPEni6dg"
 
 # Numero di telefono del tuo account Telegram
 phone_number = '+393667749398'
-
 
 async def get_max_message_id(client, channel):
     full_channel = await client(GetFullChannelRequest(channel))
@@ -66,13 +66,17 @@ async def save_media_to_mongodb(channel_id):
         db = client_mongodb[MONGODB_DATABASE]
 
         # Crea una collezione (collection) nel database per i file del canale
-        file_collection_name = f"Contenitore: {channel_name}"
-        file_collection = db[file_collection_name]
+        library_collection_name = f"Libreria: {channel_name}"
+        library_collection = db[library_collection_name]
 
-        # Verifica se ci sono documenti nel database "Contenitore: nome canale"
-        if file_collection.count_documents({}) > 0:
+        # Verifica se ci sono documenti nel database "Libreria: nome canale"
+        if library_collection.count_documents({}) > 0:
             # Trova il valore più alto di "Message ID" tra i documenti esistenti
-            max_message_id = file_collection.find_one(sort=[('Message ID', -1)])['Message ID']
+            max_message_document = library_collection.find_one(sort=[('Message ID', -1)])
+            if max_message_document:
+                max_message_id = max_message_document['Message ID']
+            else:
+                max_message_id = 0
         else:
             # Se non ci sono documenti, imposta max_message_id a 0
             max_message_id = 0
@@ -83,8 +87,16 @@ async def save_media_to_mongodb(channel_id):
         # Data e ora dell'importazione da Telegram
         import_datetime = datetime.now()
 
+        # Conta il numero totale di messaggi per il progresso
+        total_messages = (await client.get_messages(channel, limit=0)).total
+
+        # Crea la barra di progresso
+        pbar = tqdm(total=total_messages, desc="Processing messages")
+
         # Estrai i media dal canale a partire dal Message ID successivo
         async for message in client.iter_messages(channel, min_id=max_message_id, limit=None, reverse=True):
+            pbar.update(1)  # Aggiorna la barra di progresso
+
             if message.media:
                 media_info = {
                     'Data': message.date,
@@ -98,12 +110,12 @@ async def save_media_to_mongodb(channel_id):
                 }
                 if hasattr(message.media, 'photo'):
                     media_info['Dimensioni Foto'] = message.media.photo.sizes[-1].w, message.media.photo.sizes[-1].h
-                elif hasattr(message.media, 'video'):
+                elif hasattr(message.media, 'video') and hasattr(message.media.video, 'duration'):
                     media_info['Durata Video (secondi)'] = message.media.video.duration
                 elif hasattr(message.media, 'document'):
                     for attr in message.media.document.attributes:
                         if isinstance(attr, DocumentAttributeFilename):
-                            media_info['Name'] = attr.file_name  
+                            media_info['Name'] = attr.file_name
                             media_info['Dimensioni Documento (bytes)'] = message.media.document.size
                             media_info['File ID'] = message.media.document.id
 
@@ -116,10 +128,9 @@ async def save_media_to_mongodb(channel_id):
                                     # Qui imposti il valore di Name nel dizionario media_info
                                     media_info['Name'] = name_from_text
 
-
                 # Aggiungi il controllo per 'Year', 'Title', 'Type', 'Season', 'Episode' qui
                 media_data = {}
-                
+
                 # Inizializza la variabile part a None
                 part = 0
 
@@ -151,10 +162,6 @@ async def save_media_to_mongodb(channel_id):
                 else:
                     year = 0
 
-
-                # Inserisci il documento nella collezione dei file del canale
-                file_collection.update_one({'Message ID': int(message.id)}, {'$set': media_info}, upsert=True)
-
                 # Imposta il flag su True se sono stati importati nuovi media
                 media_imported += 1
 
@@ -171,8 +178,6 @@ async def save_media_to_mongodb(channel_id):
                     # Se il campo "Title" è presente, crea il documento "Libreria: nome Canale"
                     if 'Title' in media_data:
                         title = media_data['Title']
-                        library_collection_name = f"Libreria: {channel_name}"
-                        library_collection = db[library_collection_name]
 
                         # Cerca un documento esistente che corrisponda a "Title" ed "Year"
                         existing_document = library_collection.find_one({'Title': title, 'Year': year})
@@ -180,12 +185,12 @@ async def save_media_to_mongodb(channel_id):
                         if existing_document:
                             # Se esiste già un documento con lo stesso "Title" ed "Year", aggiungi le informazioni alla struttura esistente
                             season_exists = False
-                            for season in existing_document['Seasons']:
-                                if season['SeasonNumber'] == int(season_number):
+                            for season in existing_document.get('Seasons', []):
+                                if season['SeasonNumber'] == (int(season_number) if season_number else ""):
                                     # Cerca l'episodio esistente con lo stesso numero di episodio
                                     episode_exists = False
                                     for episode in season['Episodes']:
-                                        if episode['EpisodeNumber'] == int(episode_number):
+                                        if episode['EpisodeNumber'] == (int(episode_number) if episode_number else ""):
                                             episode['Contents'].append({
                                                 'Size': media_info['Dimensioni Documento (bytes)'],
                                                 'Name': media_info['Name'],  # Utilizza il valore estratto
@@ -193,7 +198,6 @@ async def save_media_to_mongodb(channel_id):
                                                 'Message ID': int(message.id),
                                                 'File ID': media_info['File ID'],
                                                 'Tipo Media': media_info['Tipo Media']
-                                             
                                             })
                                             episode_exists = True
                                             break
@@ -201,7 +205,7 @@ async def save_media_to_mongodb(channel_id):
                                     # Se non esiste un episodio con lo stesso numero di episodio, crea un nuovo episodio
                                     if not episode_exists:
                                         season['Episodes'].append({
-                                            'EpisodeNumber': int(episode_number),
+                                            'EpisodeNumber': (int(episode_number) if episode_number else ""),
                                             'Contents': [{
                                                 'Size': media_info['Dimensioni Documento (bytes)'],
                                                 'Name': media_info['Name'],  # Utilizza il valore estratto
@@ -217,9 +221,9 @@ async def save_media_to_mongodb(channel_id):
                             # Se la stagione non esiste, crea una nuova stagione
                             if not season_exists:
                                 existing_document['Seasons'].append({
-                                    'SeasonNumber': int(season_number),
+                                    'SeasonNumber': (int(season_number) if season_number else ""),
                                     'Episodes': [{
-                                        'EpisodeNumber': int(episode_number),
+                                        'EpisodeNumber': (int(episode_number) if episode_number else ""),
                                         'Contents': [{
                                             'Size': media_info['Dimensioni Documento (bytes)'],
                                             'Name': media_info['Name'],  # Utilizza il valore estratto
@@ -241,30 +245,40 @@ async def save_media_to_mongodb(channel_id):
                                 'Title': title,
                                 'Year': int(year),
                                 'Type': media_data.get('Type', ''),
-                                'Seasons': [{
-                                    'SeasonNumber': int(season_number),
-                                    'Episodes': [{
-                                        'EpisodeNumber': int(episode_number),
-                                        'Contents': [{
-                                            'Size': media_info['Dimensioni Documento (bytes)'],
-                                            'Name': media_info['Name'],  # Utilizza il valore estratto
-                                            'Part': int(part),
-                                            'Message ID': int(message.id),
-                                            'File ID': media_info['File ID'],
-                                            'Tipo Media': media_info['Tipo Media']
-                                        }]
-                                    }]
+                                'Seasons': []
+                            }
+
+                            season_doc = {
+                                'SeasonNumber': (int(season_number) if season_number else ""),
+                                'Episodes': []
+                            }
+
+                            episode_doc = {
+                                'EpisodeNumber': (int(episode_number) if episode_number else ""),
+                                'Contents': [{
+                                    'Size': media_info['Dimensioni Documento (bytes)'],
+                                    'Name': media_info['Name'],  # Utilizza il valore estratto
+                                    'Part': int(part),
+                                    'Message ID': int(message.id),
+                                    'File ID': media_info['File ID'],
+                                    'Tipo Media': media_info['Tipo Media']
                                 }]
                             }
 
+                            season_doc['Episodes'].append(episode_doc)
+                            library_document['Seasons'].append(season_doc)
+
                             # Inserisci il nuovo documento nella collezione "Libreria: nome Canale"
                             library_collection.insert_one(library_document)
+
+        # Chiudi la barra di progresso
+        pbar.close()
 
         # Stampa il numero di media importati o il messaggio se è 0
         if media_imported > 0:
             print(f"Numero di media importati: {media_imported}")
         else:
-            print(f"Nessun media importato per il canale {channel_name}. Attualmente hai catalogato tutti i file di questo canale, ovvero: {file_collection.count_documents({})} contenuti.")
+            print(f"Nessun media importato per il canale {channel_name}. Attualmente hai catalogato tutti i file di questo canale, ovvero: {library_collection.count_documents({})} contenuti.")
 
         # Aggiorna o inserisce il documento nel database "Canali"
         channels_collection = db["Canali"]
@@ -280,12 +294,12 @@ async def save_media_to_mongodb(channel_id):
 # Funzione per inserire dati nel DB 'telegram-upload'
 def insert_into_telegram_upload_db(channel_name):
     # Accedi al database 'telegram-upload'
-    upload_db = client_mongodb["telegram-upload-stream"]
-    
+    upload_db = client_mongodb["telegram-upload-drive"]
+
     # Accedi alle collezioni 'show' e 'movie'
     show_collection = upload_db["show"]
     movie_collection = upload_db["movie"]
-    
+
     # Accedi alla tua collezione 'Libreria: nome Canale'
     library_collection = db[f"Libreria: {channel_name}"]
 
@@ -294,7 +308,9 @@ def insert_into_telegram_upload_db(channel_name):
         if 'Type' in document:
             if document['Type'] == "show":
                 for season in document['Seasons']:
+                    season_number = int(season['SeasonNumber']) if season['SeasonNumber'] else 0
                     for episode in season['Episodes']:
+                        episode_number = int(episode['EpisodeNumber']) if episode['EpisodeNumber'] else 0
                         for content in episode['Contents']:
                             # estraggo il nome del file dal documento
                             file_name1 = content['Name']
@@ -304,9 +320,7 @@ def insert_into_telegram_upload_db(channel_name):
                                 remaining_text = re.split(r'- S\d{2}E\d{2} -', file_name1)[-1]
 
                                 # Costruisci il nuovo nome del file
-                                #file_name = f"{title} ({year}) - S{season}E{episode} - {remaining_text}"
-                                #file_name = f"{document['Title']} ({document['Year']}) - S{season['SeasonNumber']}E{episode['EpisodeNumber']} -{remaining_text}"
-                                file_name = f"{document['Title']} ({document['Year']}) - S{int(season['SeasonNumber']):02}E{int(episode['EpisodeNumber']):02} -{remaining_text}"
+                                file_name = f"{document['Title']} ({document['Year']}) - S{season_number:02}E{episode_number:02} -{remaining_text}"
 
                                 print(file_name)
                                 show_data = {
@@ -317,9 +331,9 @@ def insert_into_telegram_upload_db(channel_name):
                                     "Type": document['Type'],
                                     "Title": document['Title'],
                                     "Year": int(document['Year']),
-                                    "Season": int(season['SeasonNumber']),
-                                    "Episode": int(episode['EpisodeNumber']),
-                                    "File ID": ['File ID'],
+                                    "Season": season_number,
+                                    "Episode": episode_number,
+                                    "File ID": content['File ID'],
                                     "Message ID": int(content['Message ID'])
                                 }
                                 show_collection.insert_one(show_data)
@@ -332,9 +346,9 @@ def insert_into_telegram_upload_db(channel_name):
                                     "Type": document['Type'],
                                     "Title": document['Title'],
                                     "Year": int(document['Year']),
-                                    "Season": int(season['SeasonNumber']),
-                                    "Episode": int(episode['EpisodeNumber']),
-                                    "File ID": ['File ID'],
+                                    "Season": season_number,
+                                    "Episode": episode_number,
+                                    "File ID": content['File ID'],
                                     "Message ID": int(content['Message ID'])
                                 }
                                 show_collection.insert_one(show_data)
@@ -351,9 +365,9 @@ def insert_into_telegram_upload_db(channel_name):
                                 "Title": document['Title'],
                                 "Year": int(document['Year']),
                                 "Type": document['Type'],
-                                "Season": int(season['SeasonNumber']),
-                                "Episode": int(episode['EpisodeNumber']),
-                                "File ID": ['File ID'],
+                                "Season": None,
+                                "Episode": None,
+                                "File ID": content['File ID'],
                                 "Message ID": int(content['Message ID'])
                             }
                             movie_collection.insert_one(movie_data)
