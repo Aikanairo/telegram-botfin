@@ -1,31 +1,36 @@
+# database.py
+
 from pymongo import MongoClient
 import config
-import threading
-
-# Utilizzare threading.local per mantenere le connessioni separate per ogni thread
-local = threading.local()
 
 class Database:
     def __init__(self):
-        self.client = None
-        self.db = None
-
-    def connect(self):
-        try:
-            self.client = MongoClient(config.MONGODB_URI)
-            self.db = self.client[config.DB_NAME]
-            print("Connessione al database stabilita.")
-        except Exception as e:
-            print(f"Errore durante la connessione al database: {str(e)}")
-
-    def close(self):
-        if self.client:
-            self.client.close()
-            print("Connessione al database chiusa.")
+        self.client = MongoClient(config.MONGODB_URI)
+        
+        # Connessione al database 'telegram-app'
+        self.db_telegram_app = self.client['telegram-app']
+        self.collection_canali = self.db_telegram_app['canali']  # Assicurati che il nome della collezione sia corretto
+    
+        # Connessione al database 'telegram-eco'
+        self.db_telegram_eco = self.client['telegram-eco']
+        self.collection_entries = self.db_telegram_eco['entries']
 
     def get_db(self):
-        if not hasattr(local, "db") or local.db is None:
-            # Se la connessione locale non esiste o è stata chiusa, creane una nuova
-            self.connect()
-            local.db = self.db
-        return local.db
+        """Restituisce il database 'telegram-app' per mantenere la compatibilità."""
+        return self.db_telegram_app
+
+    def get_collection_canali(self):
+        """Restituisce la collezione 'canali' dal database 'telegram-app'."""
+        return self.collection_canali
+
+    def get_collection_entries(self):
+        """Restituisce la collezione 'entries' dal database 'telegram-eco'."""
+        return self.collection_entries
+
+    def get_db_telegram_app(self):
+        """Restituisce l'istanza del database 'telegram-app'."""
+        return self.db_telegram_app
+
+    def get_db_telegram_eco(self):
+        """Restituisce l'istanza del database 'telegram-eco'."""
+        return self.db_telegram_eco

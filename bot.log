@@ -1,0 +1,350 @@
+2024-12-30 22:12:11,838 [INFO] Avvio BOT...
+2024-12-30 22:12:34,971 [INFO] DEBUG: /files scattato in bot.py!
+2024-12-30 22:12:34,972 [INFO] DEBUG: handle_files_logic scattato dentro modulo_file_sistem!
+2024-12-30 22:12:35,134 [INFO] DEBUG: Trovate 1 sottocartelle per folder_id=0000000000
+2024-12-30 22:12:35,326 [INFO] 2024-12-30 22:12:35 - Aikanairo(5753154406) -> subcartelle di 0000000000
+2024-12-30 22:12:40,152 [INFO] DEBUG: handle_folder_fs callback scattato in bot.py!
+2024-12-30 22:12:40,173 [INFO] DEBUG: Trovate 1 sottocartelle per folder_id=0000000000
+2024-12-30 22:12:40,411 [INFO] 2024-12-30 22:12:40 - Aikanairo(5753154406) -> subcartelle di 0000000000
+2024-12-30 22:13:27,418 [INFO] DEBUG: handle_folder_fs callback scattato in bot.py!
+2024-12-30 22:13:27,496 [INFO] DEBUG: Trovate 1 sottocartelle per folder_id=0000000000
+2024-12-30 22:13:27,719 [INFO] 2024-12-30 22:13:27 - Aikanairo(5753154406) -> subcartelle di 0000000000
+2024-12-30 22:13:28,576 [INFO] DEBUG: handle_folder_fs callback scattato in bot.py!
+2024-12-30 22:13:28,612 [INFO] DEBUG: Trovate 1 sottocartelle per folder_id=0000000000
+2024-12-30 22:13:28,958 [INFO] 2024-12-30 22:13:28 - Aikanairo(5753154406) -> subcartelle di 0000000000
+2024-12-30 22:13:29,606 [INFO] DEBUG: handle_folder_fs callback scattato in bot.py!
+2024-12-30 22:13:29,636 [INFO] DEBUG: Trovate 1 sottocartelle per folder_id=0000000000
+2024-12-30 22:13:30,052 [INFO] 2024-12-30 22:13:29 - Aikanairo(5753154406) -> subcartelle di 0000000000
+2024-12-30 22:13:34,105 [INFO] DEBUG: handle_folder_fs callback scattato in bot.py!
+2024-12-30 22:13:34,142 [INFO] DEBUG: Trovate 1 sottocartelle per folder_id=0000000000
+2024-12-30 22:13:34,445 [INFO] 2024-12-30 22:13:34 - Aikanairo(5753154406) -> subcartelle di 0000000000
+2024-12-30 22:13:35,468 [INFO] DEBUG: handle_folder_fs callback scattato in bot.py!
+2024-12-30 22:13:35,506 [INFO] DEBUG: Trovate 1 sottocartelle per folder_id=0000000000
+2024-12-30 22:13:35,856 [INFO] 2024-12-30 22:13:35 - Aikanairo(5753154406) -> subcartelle di 0000000000
+2024-12-30 22:16:19,934 [INFO] DEBUG: handle_folder_fs callback scattato in bot.py!
+2024-12-30 22:16:20,001 [INFO] DEBUG: Trovate 1 sottocartelle per folder_id=0000000000
+2024-12-30 22:16:20,258 [INFO] 2024-12-30 22:16:19 - Aikanairo(5753154406) -> subcartelle di 0000000000
+2024-12-30 22:16:21,270 [INFO] DEBUG: handle_folder_fs callback scattato in bot.py!
+2024-12-30 22:16:21,292 [INFO] DEBUG: Trovate 1 sottocartelle per folder_id=0000000000
+2024-12-30 22:16:21,534 [INFO] 2024-12-30 22:16:21 - Aikanairo(5753154406) -> subcartelle di 0000000000
+2024-12-30 22:20:51,720 [INFO] Avvio BOT...
+2024-12-30 22:20:57,147 [INFO] DEBUG: /files scattato in bot.py!
+2024-12-30 22:20:57,153 [ERROR] Errore nella connessione: module 'modulo_file_sistem' has no attribute 'handle_files_logic'
+2024-12-30 22:21:07,153 [INFO] Avvio BOT...
+2024-12-30 22:21:30,385 [INFO] Avvio BOT...
+2024-12-30 22:21:37,383 [INFO] DEBUG: /files scattato in bot.py!
+2024-12-30 22:21:37,390 [ERROR] Errore nella connessione: module 'modulo_file_sistem' has no attribute 'handle_files_logic'
+2024-12-30 22:21:47,390 [INFO] Avvio BOT...
+2024-12-30 22:23:45,528 [INFO] Avvio BOT...
+2024-12-30 22:23:53,515 [INFO] DEBUG: /files scattato in bot.py!
+2024-12-30 22:23:53,519 [ERROR] Errore nella connessione: module 'modulo_file_sistem' has no attribute 'handle_files_logic'
+2024-12-30 22:24:03,519 [INFO] Avvio BOT...
+2024-12-30 22:24:07,151 [INFO] Avvio BOT...
+2024-12-30 22:24:12,379 [INFO] DEBUG: /files scattato in bot.py!
+2024-12-30 22:24:12,382 [ERROR] Errore nella connessione: module 'modulo_file_sistem' has no attribute 'handle_files_logic'
+2024-12-30 22:24:22,382 [INFO] Avvio BOT...
+2024-12-30 22:25:14,003 [INFO] Inizializzazione del modulo File System gerarchico...
+2024-12-30 22:25:14,004 [INFO] Modulo File System caricato correttamente.
+2024-12-30 22:25:14,006 [INFO] Avvio BOT...
+2024-12-30 22:25:19,831 [INFO] 2024-12-30 22:25:19 - /files ricevuto da Aikanairo(5753154406)
+2024-12-30 22:25:20,636 [INFO] 2024-12-30 22:25:20 - Aikanairo(5753154406) -> subcartelle di 0000000000
+2024-12-30 22:25:26,415 [INFO] 2024-12-30 22:25:26 - Aikanairo(5753154406) -> subcartelle di bah4pfhfxw
+2024-12-30 22:25:31,718 [INFO] 2024-12-30 22:25:31 - Aikanairo(5753154406) -> subcartelle di bah4pfhfxw
+2024-12-30 22:25:34,458 [INFO] 2024-12-30 22:25:34 - Aikanairo(5753154406) -> subcartelle di bah4pfhfxw
+2024-12-30 22:25:37,879 [INFO] 2024-12-30 22:25:37 - Aikanairo(5753154406) -> file di yxydu03f5t
+2024-12-30 22:25:40,501 [INFO] 2024-12-30 22:25:40 -> create_file_keyboard (file=zpu9dp9swk)
+2024-12-30 22:25:43,082 [ERROR] 2024-12-30 22:25:43 - handle_download_part_fs: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2024-12-30 22:26:49,996 [INFO] 2024-12-30 22:26:49 - Aikanairo scarica parte 1 del file zpu9dp9swk
+2024-12-30 22:26:52,811 [INFO] 2024-12-30 22:26:52 - Aikanairo scarica parte 2 del file zpu9dp9swk
+2024-12-30 22:34:19,837 [INFO] 2024-12-30 22:34:19 - /files ricevuto da EstraiListaBot(6401590878)
+2024-12-30 22:34:19,888 [ERROR] 2024-12-30 22:34:19 - Errore eliminando messaggio /files: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+2024-12-30 22:34:20,177 [INFO] 2024-12-30 22:34:19 - EstraiListaBot(6401590878) -> subcartelle di 0000000000
+2024-12-30 22:34:29,871 [INFO] 2024-12-30 22:34:29 - Aikanairo(5753154406) -> subcartelle di pro0l3lsub
+2024-12-30 22:34:31,491 [INFO] 2024-12-30 22:34:31 - Aikanairo(5753154406) -> file di qvvicys2ia
+2024-12-30 22:34:49,483 [INFO] 2024-12-30 22:34:49 - Aikanairo(5753154406) -> file di qvvicys2ia
+2024-12-30 22:34:51,442 [INFO] 2024-12-30 22:34:51 - Aikanairo(5753154406) -> file di qvvicys2ia
+2024-12-30 22:34:52,561 [INFO] 2024-12-30 22:34:52 - Aikanairo(5753154406) -> file di qvvicys2ia
+2024-12-30 22:34:55,886 [INFO] 2024-12-30 22:34:55 -> create_file_keyboard (file=xl9mh1zfc1)
+2024-12-30 22:34:57,601 [INFO] 2024-12-30 22:34:57 - Aikanairo scarica parte 1 del file xl9mh1zfc1
+2024-12-30 22:34:59,362 [INFO] 2024-12-30 22:34:59 - /files ricevuto da EstraiListaBot(6401590878)
+2024-12-30 22:34:59,407 [ERROR] 2024-12-30 22:34:59 - Errore eliminando messaggio /files: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+2024-12-30 22:34:59,716 [INFO] 2024-12-30 22:34:59 - EstraiListaBot(6401590878) -> subcartelle di 0000000000
+2024-12-30 22:35:02,484 [INFO] 2024-12-30 22:35:02 - Aikanairo(5753154406) -> subcartelle di jtgh8r5kta
+2024-12-30 22:35:04,013 [INFO] 2024-12-30 22:35:03 - Aikanairo(5753154406) -> file di ief96k4bbt
+2024-12-30 22:35:06,011 [INFO] 2024-12-30 22:35:05 -> create_file_keyboard (file=tjdfa2i8qn)
+2024-12-30 22:35:07,461 [INFO] 2024-12-30 22:35:07 - Aikanairo scarica parte 1 del file tjdfa2i8qn
+2024-12-30 22:40:51,515 [INFO] 2024-12-30 22:40:51 - /files ricevuto da AstroSpiff(554484259)
+2024-12-30 22:40:51,800 [INFO] 2024-12-30 22:40:51 - AstroSpiff(554484259) -> subcartelle di 0000000000
+2024-12-30 22:40:54,088 [INFO] 2024-12-30 22:40:53 - AstroSpiff(554484259) -> subcartelle di pro0l3lsub
+2024-12-30 22:40:58,622 [INFO] 2024-12-30 22:40:58 - AstroSpiff(554484259) -> subcartelle di pro0l3lsub
+2024-12-30 22:41:02,894 [INFO] 2024-12-30 22:41:02 - AstroSpiff(554484259) -> subcartelle di pro0l3lsub
+2024-12-30 22:41:07,980 [INFO] 2024-12-30 22:41:07 - AstroSpiff(554484259) -> file di etdaxnrfg2
+2024-12-30 22:41:23,237 [INFO] 2024-12-30 22:41:22 -> create_file_keyboard (file=4t1q68tpz9)
+2024-12-30 22:44:59,300 [INFO] Inizializzazione del modulo File System gerarchico...
+2024-12-30 22:44:59,302 [INFO] Modulo File System caricato correttamente.
+2024-12-30 22:44:59,306 [INFO] Avvio BOT...
+2024-12-30 22:45:00,549 [INFO] 2024-12-30 22:45:00 - /files ricevuto da EstraiListaBot(6401590878)
+2024-12-30 22:45:00,595 [ERROR] 2024-12-30 22:45:00 - Errore eliminando messaggio /files: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+2024-12-30 22:45:00,626 [INFO] 2024-12-30 22:45:00 - /files ricevuto da EstraiListaBot(6401590878)
+2024-12-30 22:45:00,681 [ERROR] 2024-12-30 22:45:00 - Errore eliminando messaggio /files: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+2024-12-30 22:45:00,921 [INFO] 2024-12-30 22:45:00 - EstraiListaBot(6401590878) -> subcartelle di 0000000000
+2024-12-30 22:45:00,995 [INFO] 2024-12-30 22:45:00 - EstraiListaBot(6401590878) -> subcartelle di 0000000000
+2024-12-30 22:45:01,063 [ERROR] Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: query is too old and response timeout expired or query ID is invalid
+2024-12-30 22:45:01,069 [ERROR] Exception traceback:
+Traceback (most recent call last):
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/__init__.py", line 9165, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "/home/aik/Scrivania/script/app-telegram-full/modulo_file_sistem.py", line 443, in handle_back_to_files
+    bot.answer_callback_query(call.id)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/__init__.py", line 6058, in answer_callback_query
+    return apihelper.answer_callback_query(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.token, callback_query_id, text=text, show_alert=show_alert, url=url, cache_time=cache_time)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/apihelper.py", line 1854, in answer_callback_query
+    return _make_request(token, method_url, params=payload, method='post')
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: query is too old and response timeout expired or query ID is invalid
+
+2024-12-30 22:45:01,072 [INFO] 2024-12-30 22:45:01 - /files ricevuto da EstraiListaBot(6401590878)
+2024-12-30 22:45:01,118 [ERROR] 2024-12-30 22:45:01 - Errore eliminando messaggio /files: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+2024-12-30 22:45:01,544 [INFO] 2024-12-30 22:45:01 - EstraiListaBot(6401590878) -> subcartelle di 0000000000
+2024-12-30 22:45:01,631 [ERROR] Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: query is too old and response timeout expired or query ID is invalid
+2024-12-30 22:45:01,636 [ERROR] Exception traceback:
+Traceback (most recent call last):
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/__init__.py", line 9165, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "/home/aik/Scrivania/script/app-telegram-full/modulo_file_sistem.py", line 443, in handle_back_to_files
+    bot.answer_callback_query(call.id)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/__init__.py", line 6058, in answer_callback_query
+    return apihelper.answer_callback_query(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.token, callback_query_id, text=text, show_alert=show_alert, url=url, cache_time=cache_time)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/apihelper.py", line 1854, in answer_callback_query
+    return _make_request(token, method_url, params=payload, method='post')
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: query is too old and response timeout expired or query ID is invalid
+
+2024-12-30 22:45:26,802 [INFO] Inizializzazione del modulo File System gerarchico...
+2024-12-30 22:45:26,803 [INFO] Modulo File System caricato correttamente.
+2024-12-30 22:45:26,806 [INFO] Avvio BOT...
+2024-12-30 22:45:53,919 [INFO] 2024-12-30 22:45:53 - /files ricevuto da Aikanairo(5753154406)
+2024-12-30 22:45:54,372 [INFO] 2024-12-30 22:45:54 - Aikanairo(5753154406) -> subcartelle di 0000000000
+2024-12-30 22:45:57,048 [INFO] 2024-12-30 22:45:56 - Aikanairo(5753154406) -> subcartelle di bah4pfhfxw
+2024-12-30 22:47:30,602 [INFO] 2024-12-30 22:47:30 - Aikanairo(5753154406) -> subcartelle di bah4pfhfxw
+2024-12-30 22:47:35,856 [INFO] 2024-12-30 22:47:35 - Aikanairo(5753154406) -> file di h4oplhifd4
+2024-12-30 22:47:37,966 [INFO] 2024-12-30 22:47:37 - Aikanairo(5753154406) -> file di h4oplhifd4
+2024-12-30 22:47:39,929 [INFO] 2024-12-30 22:47:39 - Aikanairo(5753154406) -> file di h4oplhifd4
+2024-12-30 22:47:41,251 [INFO] 2024-12-30 22:47:41 - Aikanairo(5753154406) -> file di h4oplhifd4
+2024-12-30 22:47:42,486 [INFO] 2024-12-30 22:47:42 -> create_file_keyboard (file=rsll2ziucg)
+2024-12-30 22:47:43,831 [INFO] 2024-12-30 22:47:43 - /files ricevuto da EstraiListaBot(6401590878)
+2024-12-30 22:47:43,880 [ERROR] 2024-12-30 22:47:43 - Errore eliminando messaggio /files: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+2024-12-30 22:47:44,264 [INFO] 2024-12-30 22:47:44 - EstraiListaBot(6401590878) -> subcartelle di 0000000000
+2024-12-30 22:47:54,677 [INFO] 2024-12-30 22:47:54 - /files ricevuto da Aikanairo(5753154406)
+2024-12-30 22:47:55,134 [INFO] 2024-12-30 22:47:54 - Aikanairo(5753154406) -> subcartelle di 0000000000
+2024-12-30 22:49:35,394 [INFO] 2024-12-30 22:49:35 - /files ricevuto da Aikanairo(5753154406)
+2024-12-30 22:49:36,055 [INFO] 2024-12-30 22:49:35 - Aikanairo(5753154406) -> subcartelle di 0000000000
+2024-12-30 23:15:12,180 [INFO] 2024-12-30 23:15:11 - AstroSpiff(554484259) -> subcartelle di ap63bcqgj4
+2024-12-30 23:15:12,429 [INFO] 2024-12-30 23:15:12 - AstroSpiff(554484259) -> subcartelle di ap63bcqgj4
+2024-12-30 23:15:14,313 [INFO] 2024-12-30 23:15:14 - AstroSpiff(554484259) -> subcartelle di vffw92agkt
+2024-12-30 23:15:16,337 [INFO] 2024-12-30 23:15:15 - AstroSpiff(554484259) -> subcartelle di h1ji8vfrwf
+2024-12-30 23:15:18,012 [INFO] 2024-12-30 23:15:17 - AstroSpiff(554484259) -> file di 5g6ymihr27
+2024-12-30 23:15:20,226 [INFO] 2024-12-30 23:15:19 - AstroSpiff(554484259) -> file di 5g6ymihr27
+2024-12-30 23:15:24,944 [INFO] 2024-12-30 23:15:24 - AstroSpiff(554484259) -> file di 5g6ymihr27
+2024-12-30 23:15:28,716 [INFO] 2024-12-30 23:15:28 - AstroSpiff(554484259) -> file di 5g6ymihr27
+2024-12-30 23:15:33,200 [INFO] 2024-12-30 23:15:32 - AstroSpiff(554484259) -> file di 5g6ymihr27
+2024-12-30 23:18:01,714 [INFO] 2024-12-30 23:18:01 - AstroSpiff(554484259) -> file di 5g6ymihr27
+2024-12-30 23:23:10,300 [INFO] 2024-12-30 23:23:10 - /files ricevuto da Aikanairo(5753154406)
+2024-12-30 23:23:10,881 [INFO] 2024-12-30 23:23:10 - Aikanairo(5753154406) -> subcartelle di 0000000000
+2024-12-30 23:23:18,465 [INFO] 2024-12-30 23:23:18 - Aikanairo(5753154406) -> subcartelle di 5h7gwg5ch0
+2024-12-30 23:23:20,202 [INFO] 2024-12-30 23:23:19 - Aikanairo(5753154406) -> subcartelle di 5h7gwg5ch0
+2024-12-30 23:23:21,431 [INFO] 2024-12-30 23:23:21 - Aikanairo(5753154406) -> subcartelle di 5h7gwg5ch0
+2024-12-30 23:23:22,436 [INFO] 2024-12-30 23:23:22 - Aikanairo(5753154406) -> subcartelle di 5h7gwg5ch0
+2024-12-30 23:23:23,418 [INFO] 2024-12-30 23:23:23 - Aikanairo(5753154406) -> subcartelle di 5h7gwg5ch0
+2024-12-30 23:23:24,319 [INFO] 2024-12-30 23:23:23 - Aikanairo(5753154406) -> subcartelle di 5h7gwg5ch0
+2024-12-30 23:23:25,413 [INFO] 2024-12-30 23:23:25 - Aikanairo(5753154406) -> subcartelle di 5h7gwg5ch0
+2024-12-30 23:23:26,280 [INFO] 2024-12-30 23:23:25 - Aikanairo(5753154406) -> subcartelle di 5h7gwg5ch0
+2024-12-30 23:23:26,852 [INFO] 2024-12-30 23:23:26 - Aikanairo(5753154406) -> subcartelle di 5h7gwg5ch0
+2024-12-30 23:23:27,732 [INFO] 2024-12-30 23:23:27 - Aikanairo(5753154406) -> subcartelle di 5h7gwg5ch0
+2024-12-30 23:23:31,702 [INFO] 2024-12-30 23:23:31 - Aikanairo(5753154406) -> subcartelle di 5h7gwg5ch0
+2024-12-30 23:23:33,633 [INFO] 2024-12-30 23:23:33 - Aikanairo(5753154406) -> subcartelle di 5h7gwg5ch0
+2024-12-30 23:23:34,795 [INFO] 2024-12-30 23:23:34 - Aikanairo(5753154406) -> subcartelle di 5h7gwg5ch0
+2024-12-30 23:23:36,196 [INFO] 2024-12-30 23:23:35 - Aikanairo(5753154406) -> subcartelle di 5h7gwg5ch0
+2024-12-30 23:23:37,099 [INFO] 2024-12-30 23:23:36 - Aikanairo(5753154406) -> subcartelle di 5h7gwg5ch0
+2024-12-30 23:23:37,976 [INFO] 2024-12-30 23:23:37 - Aikanairo(5753154406) -> subcartelle di 5h7gwg5ch0
+2024-12-30 23:23:38,825 [INFO] 2024-12-30 23:23:38 - Aikanairo(5753154406) -> subcartelle di 5h7gwg5ch0
+2024-12-30 23:59:05,433 [ERROR] Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 502. Description: Bad Gateway
+2024-12-30 23:59:05,434 [ERROR] Exception traceback:
+Traceback (most recent call last):
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+                               allowed_updates=allowed_updates,
+                               timeout=timeout, long_polling_timeout=long_polling_timeout)
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+        self.token, offset=offset, limit=limit, timeout=timeout, allowed_updates=allowed_updates,
+        long_polling_timeout=long_polling_timeout)
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/apihelper.py", line 332, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 502. Description: Bad Gateway
+
+2024-12-30 23:59:05,740 [ERROR] Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 502. Description: Bad Gateway
+2024-12-30 23:59:05,742 [ERROR] Exception traceback:
+Traceback (most recent call last):
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+                               allowed_updates=allowed_updates,
+                               timeout=timeout, long_polling_timeout=long_polling_timeout)
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+        self.token, offset=offset, limit=limit, timeout=timeout, allowed_updates=allowed_updates,
+        long_polling_timeout=long_polling_timeout)
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/apihelper.py", line 332, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "/home/aik/Scrivania/script/app-telegram-full/venv/lib/python3.13/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 502. Description: Bad Gateway
+
+2024-12-30 23:59:31,277 [ERROR] Errore nella connessione: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+2024-12-30 23:59:41,277 [INFO] Avvio BOT...
+2024-12-31 01:46:18,127 [INFO] 2024-12-31 01:46:17 - Aikanairo(5753154406) -> subcartelle di 5h7gwg5ch0
+2024-12-31 01:46:25,471 [INFO] 2024-12-31 01:46:25 - Aikanairo(5753154406) -> subcartelle di 5h7gwg5ch0
+2024-12-31 01:46:40,979 [INFO] 2024-12-31 01:46:40 - /files ricevuto da Aikanairo(5753154406)
+2024-12-31 01:46:41,478 [INFO] 2024-12-31 01:46:41 - Aikanairo(5753154406) -> subcartelle di 0000000000
+2024-12-31 01:46:48,669 [INFO] 2024-12-31 01:46:48 - Aikanairo(5753154406) -> subcartelle di bah4pfhfxw
+2024-12-31 01:46:52,888 [INFO] 2024-12-31 01:46:52 - Aikanairo(5753154406) -> file di yfikggtqnc
+2024-12-31 01:46:56,828 [INFO] 2024-12-31 01:46:56 -> create_file_keyboard (file=eikvdf8cmh)
+2024-12-31 01:46:59,915 [INFO] 2024-12-31 01:46:59 - Aikanairo scarica parte 1 del file eikvdf8cmh
+2024-12-31 13:53:22,920 [INFO] 2024-12-31 13:53:22 - /files ricevuto da EstraiListaBot(6401590878)
+2024-12-31 13:53:22,972 [ERROR] 2024-12-31 13:53:22 - Errore eliminando messaggio /files: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+2024-12-31 13:53:23,309 [INFO] 2024-12-31 13:53:23 - EstraiListaBot(6401590878) -> subcartelle di 0000000000
+2024-12-31 13:53:25,080 [INFO] 2024-12-31 13:53:24 - Aikanairo(5753154406) -> subcartelle di bah4pfhfxw
+2024-12-31 13:53:26,575 [INFO] 2024-12-31 13:53:26 - Aikanairo(5753154406) -> file di h4oplhifd4
+2024-12-31 13:53:28,801 [INFO] 2024-12-31 13:53:28 - Aikanairo(5753154406) -> file di h4oplhifd4
+2024-12-31 13:53:30,493 [INFO] 2024-12-31 13:53:30 - Aikanairo(5753154406) -> file di h4oplhifd4
+2024-12-31 14:02:07,970 [INFO] 2024-12-31 14:02:07 - /files ricevuto da fatshotty(63212494)
+2024-12-31 14:02:08,509 [INFO] 2024-12-31 14:02:08 - fatshotty(63212494) -> subcartelle di 0000000000
+2024-12-31 14:02:13,701 [INFO] 2024-12-31 14:02:13 - fatshotty(63212494) -> subcartelle di 5h7gwg5ch0
+2024-12-31 14:02:25,580 [ERROR] 2024-12-31 14:02:25 - handle_back_fs: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message can't be deleted for everyone
+2024-12-31 14:02:25,669 [ERROR] 2024-12-31 14:02:25 - handle_back_fs: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message can't be deleted for everyone
+2024-12-31 14:02:25,748 [ERROR] 2024-12-31 14:02:25 - handle_back_fs: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message can't be deleted for everyone
+2024-12-31 14:02:25,840 [ERROR] 2024-12-31 14:02:25 - handle_back_fs: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message can't be deleted for everyone
+2024-12-31 14:02:26,254 [INFO] 2024-12-31 14:02:26 - fatshotty(63212494) -> subcartelle di 5h7gwg5ch0
+2024-12-31 14:04:52,176 [INFO] 2024-12-31 14:04:52 - /files ricevuto da Aikanairo(5753154406)
+2024-12-31 14:04:52,348 [ERROR] 2024-12-31 14:04:52 - Errore eliminando messaggio /files: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message can't be deleted
+2024-12-31 14:04:52,708 [INFO] 2024-12-31 14:04:52 - Aikanairo(5753154406) -> subcartelle di 0000000000
+2024-12-31 14:20:22,280 [INFO] 2024-12-31 14:20:21 - yazyazoo(300851379) -> subcartelle di bah4pfhfxw
+2024-12-31 14:34:05,563 [INFO] 2024-12-31 14:34:05 - Aikanairo(5753154406) -> file di h4oplhifd4
+2024-12-31 14:34:08,829 [INFO] 2024-12-31 14:34:08 - /files ricevuto da Aikanairo(5753154406)
+2024-12-31 14:34:09,567 [INFO] 2024-12-31 14:34:09 - Aikanairo(5753154406) -> subcartelle di 0000000000
+2024-12-31 14:34:14,187 [INFO] 2024-12-31 14:34:13 - Aikanairo(5753154406) -> subcartelle di bah4pfhfxw
+2024-12-31 14:34:32,782 [INFO] 2024-12-31 14:34:32 - yazyazoo(300851379) -> file di yfikggtqnc
+2024-12-31 14:34:40,388 [INFO] 2024-12-31 14:34:40 -> create_file_keyboard (file=eikvdf8cmh)
+2024-12-31 14:34:41,285 [INFO] 2024-12-31 14:34:41 - Aikanairo(5753154406) -> file di yfikggtqnc
+2024-12-31 14:34:42,891 [INFO] 2024-12-31 14:34:42 -> create_file_keyboard (file=eikvdf8cmh)
+2024-12-31 14:34:44,510 [INFO] 2024-12-31 14:34:44 - Aikanairo scarica parte 1 del file eikvdf8cmh
+2024-12-31 14:55:49,417 [INFO] Inizializzazione del modulo File System gerarchico...
+2024-12-31 14:55:49,418 [INFO] Modulo File System caricato correttamente.
+2024-12-31 14:55:49,418 [INFO] Inizializzazione modulo Roy...
+2024-12-31 14:55:49,418 [INFO] Modulo Roy caricato correttamente.
+2024-12-31 14:55:49,422 [INFO] Avvio BOT...
+2024-12-31 14:58:13,798 [INFO] 2024-12-31 14:58:13 - /roy eseguito da Aikanairo (5753154406), target=@aikresourcebot
+2024-12-31 15:09:07,993 [INFO] 2024-12-31 15:09:07 - /files ricevuto da Aikanairo(5753154406)
+2024-12-31 15:09:08,488 [INFO] 2024-12-31 15:09:08 - Aikanairo(5753154406) -> subcartelle di 0000000000
+2024-12-31 15:12:22,870 [INFO] Inizializzazione del modulo File System gerarchico...
+2024-12-31 15:12:22,871 [INFO] Modulo File System caricato correttamente.
+2024-12-31 15:12:22,875 [INFO] Avvio BOT...
+2024-12-31 15:29:28,260 [INFO] Inizializzazione del modulo File System gerarchico...
+2024-12-31 15:29:28,261 [INFO] Modulo File System caricato correttamente.
+2024-12-31 15:29:28,262 [INFO] Modulo /roy inizializzato correttamente.
+2024-12-31 15:29:28,265 [INFO] Avvio BOT...
+2024-12-31 15:29:41,475 [INFO] /roy invocato da user Aikanairo(5753154406) in chat_id=5753154406
+2024-12-31 15:30:06,969 [INFO] /roy invocato da user Aikanairo(5753154406) in chat_id=5753154406
+2024-12-31 15:33:14,228 [INFO] Inizializzazione del modulo File System gerarchico...
+2024-12-31 15:33:14,229 [INFO] Modulo File System caricato correttamente.
+2024-12-31 15:33:14,229 [INFO] Modulo /roy inizializzato correttamente.
+2024-12-31 15:33:14,233 [INFO] Avvio BOT...
+2024-12-31 15:33:21,527 [INFO] /roy invocato da user Aikanairo(5753154406) in chat_id=5753154406
+2024-12-31 15:34:20,856 [INFO] Inizializzazione del modulo File System gerarchico...
+2024-12-31 15:34:20,857 [INFO] Modulo File System caricato correttamente.
+2024-12-31 15:34:20,857 [INFO] Modulo /roy inizializzato correttamente.
+2024-12-31 15:34:20,860 [INFO] Avvio BOT...
+2024-12-31 15:34:28,572 [INFO] /roy invocato da user Aikanairo(5753154406) in chat_id=5753154406
+2024-12-31 15:34:28,745 [ERROR] Errore nel handle_roy: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: there are no administrators in the private chat
+2024-12-31 15:36:40,748 [INFO] Inizializzazione del modulo File System gerarchico...
+2024-12-31 15:36:40,749 [INFO] Modulo File System caricato correttamente.
+2024-12-31 15:36:40,749 [INFO] Modulo /roy inizializzato correttamente.
+2024-12-31 15:36:40,752 [INFO] Avvio BOT...
+2024-12-31 15:38:05,070 [INFO] /roy invocato da user Aikanairo(5753154406) in chat_id=5753154406
+2024-12-31 15:43:12,525 [INFO] Inizializzazione del modulo File System gerarchico...
+2024-12-31 15:43:12,526 [INFO] Modulo File System caricato correttamente.
+2024-12-31 15:43:12,526 [INFO] Inizializzazione modulo Roy...
+2024-12-31 15:43:12,526 [INFO] Modulo Roy caricato correttamente.
+2024-12-31 15:43:12,529 [INFO] Avvio BOT...
+2024-12-31 15:44:20,556 [INFO] 2024-12-31 15:44:20 - /roy eseguito da Aikanairo (5753154406), target=@aikresourcebot
+2024-12-31 15:44:34,352 [INFO] Inizializzazione del modulo File System gerarchico...
+2024-12-31 15:44:34,353 [INFO] Modulo File System caricato correttamente.
+2024-12-31 15:44:34,353 [INFO] Inizializzazione modulo Roy...
+2024-12-31 15:44:34,353 [INFO] Modulo Roy caricato correttamente.
+2024-12-31 15:44:34,356 [INFO] Avvio BOT...
+2024-12-31 15:44:46,042 [INFO] 2024-12-31 15:44:46 - /roy eseguito da Aikanairo (5753154406), target=@aikresourcebot
+2024-12-31 15:45:15,271 [INFO] Inizializzazione del modulo File System gerarchico...
+2024-12-31 15:45:15,272 [INFO] Modulo File System caricato correttamente.
+2024-12-31 15:45:15,272 [INFO] Inizializzazione modulo Roy...
+2024-12-31 15:45:15,272 [INFO] Modulo Roy caricato correttamente.
+2024-12-31 15:45:15,276 [INFO] Avvio BOT...
+2024-12-31 15:45:24,532 [INFO] 2024-12-31 15:45:24 - /roy eseguito da Aikanairo(5753154406), target=@aikresourcebot
+2024-12-31 15:52:49,608 [INFO] 2024-12-31 15:52:49 - /roy eseguito da Aikanairo(5753154406), target=@aikresourcebot
+2024-12-31 16:36:32,054 [INFO] Inizializzazione del modulo File System gerarchico...
+2024-12-31 16:36:32,055 [INFO] Modulo File System caricato correttamente.
+2024-12-31 16:36:32,055 [INFO] Inizializzazione modulo Roy...
+2024-12-31 16:36:32,055 [INFO] Modulo Roy caricato correttamente.
+2024-12-31 16:36:32,059 [INFO] Avvio BOT...
+2024-12-31 16:37:51,335 [INFO] 2024-12-31 16:37:51 - /roy eseguito da Aikanairo(5753154406), target=@aikresourcebot @aikresourcebot
